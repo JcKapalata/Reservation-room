@@ -1,0 +1,118 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #1F2A36;
+    color: white;
+}
+
+/* header et footer */
+header, footer {
+    background: #667882;
+    height: 60px;
+}
+
+/* header */
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+}
+
+/* main */
+main{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    min-height: 80vh;
+}
+
+/* formulaire Reservation */
+.form-reservation{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2px;
+}
+.form-reservation h2{
+    font-weight: bold;
+    text-align: center;
+}
+.form-reservation legend{
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0 2px;
+    display: inline-block;
+    text-align: center;
+}
+/* fieldset */
+.form-reservation fieldset{
+    margin: 2px;
+    padding: 2px;
+    border-radius: 5px;
+    min-height: 50px;
+}
+
+/* fieldset : Sejour  et  Information personnelles - */
+.form-reservation .se-jour,
+.form-reservation .info-personnelles{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.se-jour label, .se-jour input,
+.info-personnelles label, .info-personnelles input{
+    margin: 5px;
+}
+.se-jour input, .info-personnelles input{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2px;
+}
+
+/* fieldset : type de chambre */
+.form-reservation .type-chambre{
+    display: flex;
+    justify-content: space-around;
+}
+.type-chambre div{
+    margin: 5px 0;
+}
+
+/* div btn valider */
+.btn-valider{
+    display: flex;
+    justify-content: center;
+}
+.btn-valider button{
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 2px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 1s;
+    background: #667882;
+    color: white;
+}
+.btn-valider button:hover{
+    background: whitesmoke;
+    border:1px solid #667882;
+    color: black;
+}
+
+/* section ... */
+main section{
+    background: #C3D9E0;
+}
+
+/* footer */
+footer{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}

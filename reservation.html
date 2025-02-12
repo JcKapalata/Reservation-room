@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reservation.css">
+    <title>Reservation</title>
+</head>
+<body>
+    <header>
+        <h1>Bienvenue</h1>
+    </header>
+
+    <main>
+        <form action="#" method="get" class="form-reservation">
+            <h2>Reserve la place</h2>
+
+            <!-- information sur le se jour -->
+            <fieldset class="se-jour">
+                <legend>Se jour</legend>
+                <label for="arrive">Date d' arrive</label>
+                <input type="datetime-local" name="arrive" id="arrive" required>
+                <label for="depart">Date de depart </label>
+                <input type="datetime-local" name="depart" id="depart" required>
+            </fieldset>
+
+            <!-- Information sur type de chambre -->
+            <fieldset class="type-chambre">
+                <legend>Type de chambre</legend>
+                <div>
+                    <input type="radio" name="chambre" id="simple" value="simple" checked>
+                    <label for="simple">Simple</label>
+                </div>
+                <div>
+                    <input type="radio" name="chambre" id="standard" value="standard">
+                    <label for="standard">Standard</label>
+                </div>
+                <div>
+                    <input type="radio" name="chambre" id="vip" value="vip">
+                    <label for="vip">VIP</label>
+                </div>
+            </fieldset>
+
+            <!-- Information personnelles -->
+            <fieldset class="info-personnelles">
+                <legend>Information personnelles</legend>
+                <label for="nom">Nom</label>
+                <input type="text" name="nom" id="nom" placeholder="Votre nom" required>
+                <label for="prenom">Prenom</label>
+                <input type="text" name="prenom" id="prenom" placeholder="Votre prenom" required>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Votre email" required>
+            </fieldset>
+            <div class="btn-valider">
+                <button type="submit">Valider</button>
+            </div>
+        </form>
+
+        <!-- section ... -->
+         <section>
+
+         </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Réservation d'Hôtel</p>
+    </footer>
+</body>
+</html>
