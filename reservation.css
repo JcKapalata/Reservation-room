@@ -29,7 +29,7 @@ header{
 /* main */
 main{
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 25% 75%;
     min-height: 80vh;
 }
 
@@ -105,10 +105,32 @@ main{
     color: black;
 }
 
-/* section ... */
-main section{
+/* section tableau de bord */
+main .tableau-bord{
     background: #C3D9E0;
 }
+
+/*  */
+.tableau-bord table{
+    width: 90%;
+    margin: 5px auto;
+}
+.tableau-bord caption{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #1F2A36;
+}
+
+.tableau-bord th, .tableau-bord td{
+    padding: 10px 2px;
+    border: none;
+    background: #1F2A36;
+    text-align: center;
+}
+.tableau-bord th{
+    font-size: 0.9rem;
+}
+
 
 /* footer */
 footer{
